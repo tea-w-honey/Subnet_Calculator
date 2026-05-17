@@ -184,15 +184,17 @@ if __name__ == '__main__':
     parser = argparse.ArgumentParser(
                         prog = 'sub.py',
                         description = 'Takes in an IP and Subnet Mask to output Subnet information',
-                        epilog = 'Well Wishes' )
+                        epilog = 'Well Wishes')
 
-    parser.add_argument("-i","--IP", help = 'The IP address to be worked. EX: x.x.x.x')
-    parser.add_argument("-s","--Subnet", help = "The Subnet Mask. EX: x.x.x.x")
-    parser.add_argument("-c", "--CIDR", help = "Subnet Mask in CIDR Format no /")
-    parser.add_argument("-m", "--Multiple", action = 'store_true', help =
-                        "Print multiple subnets of the same size.")
-    parser.add_argument("-v", "--VLSM", nargs='+',
-                        help = "Create multiple subnets of varing length")
+    parser.add_argument("-i", "--IP", required=True, help='The IP address to be worked. EX: -i x.x.x.x')
+
+    # -s and -c are mutually exclusive but one is required
+    mask_group = parser.add_mutually_exclusive_group(required=True)
+    mask_group.add_argument("-s", "--Subnet", help="The Subnet Mask. EX: -s x.x.x.x")
+    mask_group.add_argument("-c", "--CIDR", help="Subnet Mask in CIDR Format no /")
+
+    parser.add_argument("-m", "--Multiple", action='store_true', help="Print multiple subnets of the same size.")
+    parser.add_argument("-v", "--VLSM", nargs='+', help="Create multiple subnets of varing length Ex: -v 152 126 32 5")
 
 
     if len(sys.argv) == 1:

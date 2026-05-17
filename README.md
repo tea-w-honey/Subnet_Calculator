@@ -17,16 +17,19 @@ Terminal based version of the subnet calculator
 Take user ip and subnet by using flags
 
 ### Usage:
-sub.py [-h] [-i IP] [-s SUBNET] [-c CIDR] [-m] [-v VLSM [VLSM ...]]  
-  
+usage: sub.py [-h] -i IP (-s SUBNET | -c CIDR) [-m] [-v VLSM [VLSM ...]]
+
+Takes in an IP and Subnet Mask to output Subnet information
+
 options:  
   -h, --help            show this help message and exit  
-  -i, --IP IP           The IP address to be worked. EX: x.x.x.x  
-  -s, --Subnet SUBNET   The Subnet Mask. EX: x.x.x.x  
+  -i, --IP IP           The IP address to be worked. EX: -i x.x.x.x  
+  -s, --Subnet SUBNET   The Subnet Mask. EX: -s x.x.x.x  
   -c, --CIDR CIDR       Subnet Mask in CIDR Format no /  
   -m, --Multiple        Print multiple subnets of the same size.  
-  -v, --VLSM VLSM [VLSM ...]  
-                        Create multiple subnets of varing length  
+  -v, --VLSM VLSM [VLSM ...] Create multiple subnets of varing length Ex: -v 152 126 32 5  
+
+Well Wishes 
 
 
 ## gui_subs.py
