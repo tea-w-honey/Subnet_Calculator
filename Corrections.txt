@@ -1,0 +1,7 @@
+************* Module subs
+subs.py:6:1: W0511: todo: Fix issues determined by pylint (fixme)
+subs.py:234:8: C0200: Consider using enumerate instead of iterating with range and len (consider-using-enumerate)
+
+------------------------------------------------------------------
+Your code has been rated at 9.84/10 (previous run: 9.45/10, +0.39)
+
