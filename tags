@@ -1,0 +1,42 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.9~svn20110310	//
+CIDR	subs.py	/^        CIDR = (-1<<(32-24)) & 0xffffffff$/;"	v
+CIDR	subs.py	/^        CIDR = (-1<<(32-CIDR)) & 0xffffffff$/;"	v
+CIDR	subs.py	/^        CIDR = int(args.CIDR)$/;"	v
+NET_ID	subs.py	/^    NET_ID = nflb(host, subnet)$/;"	v
+SubnetCalculatorApp	gui_subs.py	/^class SubnetCalculatorApp(QWidget):$/;"	c
+TOTAL	subs.py	/^    TOTAL = hosts(subnet)$/;"	v
+__init__	gui_subs.py	/^    def __init__(self):$/;"	m	class:SubnetCalculatorApp
+app	gui_subs.py	/^    app = Qapp(sys.argv)$/;"	v	class:SubnetCalculatorApp
+arg	subs.py	/^        arg = args.VLSM$/;"	v
+args	subs.py	/^    args = parser.parse_args()$/;"	v
+bin_con	ModSubs.py	/^def bin_con(ip_in):$/;"	f
+bin_con	subs.py	/^def bin_con(ip_in):$/;"	f
+description	subs.py	/^                        description = 'Takes in an IP and Subnet Mask to output Subnet information',$/;"	v
+epilog	subs.py	/^                        epilog = 'Well Wishes')$/;"	v
+hold	subs.py	/^        hold = num_subs(TOTAL)$/;"	v
+host	subs.py	/^    host = ip.IPv4Address(args.IP)$/;"	v
+hosts	ModSubs.py	/^def hosts(subnet_in):$/;"	f
+hosts	subs.py	/^def hosts(subnet_in):$/;"	f
+init_ui	gui_subs.py	/^    def init_ui(self):$/;"	m	class:SubnetCalculatorApp
+mask_group	subs.py	/^    mask_group = parser.add_mutually_exclusive_group(required=True)$/;"	v
+nflb	ModSubs.py	/^def nflb(ip_in, subnet_in):$/;"	f
+nflb	subs.py	/^def nflb(ip_in, subnet_in):$/;"	f
+num_subs	ModSubs.py	/^def num_subs(step):$/;"	f
+num_subs	subs.py	/^def num_subs(step):$/;"	f
+palette	gui_subs.py	/^    palette = QPalette()$/;"	v	class:SubnetCalculatorApp
+parser	subs.py	/^    parser = argparse.ArgumentParser($/;"	v
+prog	subs.py	/^                        prog = 'sub.py',$/;"	v
+run_subnet_calculations	ModSubs.py	/^def run_subnet_calculations(ip_addr, subnet_mask, multiple=False, vlsm_sizes=None):$/;"	f
+run_subnet_script	gui_subs.py	/^    def run_subnet_script(self):$/;"	m	class:SubnetCalculatorApp
+same_nflb	ModSubs.py	/^def same_nflb(nid, sub_in, holding, total):$/;"	f
+same_nflb	subs.py	/^def same_nflb(nid, sub_in, holding, total):$/;"	f
+subnet	subs.py	/^        subnet = ip.IPv4Address(CIDR)$/;"	v
+subnet	subs.py	/^        subnet = ip.IPv4Address(args.Subnet)$/;"	v
+vlsm	ModSubs.py	/^def vlsm(net_sizes, start_nid, sub_in):$/;"	f
+vlsm	subs.py	/^def vlsm(net_size, start_nid, sub_in):$/;"	f
+window	gui_subs.py	/^    window = SubnetCalculatorApp()$/;"	v	class:SubnetCalculatorApp
